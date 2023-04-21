@@ -1,0 +1,45 @@
+@import "./variables";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.app {
+    padding: 30px 0;
+}
+.light {
+    background-color: $col-light;
+
+    .speakers-section {
+        background: $col-white;
+
+        .header {
+            .writeup {
+                color: $col-black;
+            }
+        }
+    }
+}
+.dark {
+    background-color: $col-black;
+    .speakers-section{
+        background-color: $col-dark;
+
+        .header {
+            .writeup {
+                color: $col-white;
+            }
+        }
+        .container {
+            .expanded {
+                .speaker {
+                    .name {
+                        color: $col-white;
+                    }
+                }
+            }
+        }
+    }
+}

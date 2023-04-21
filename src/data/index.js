@@ -1,33 +1,39 @@
-import picOne from "../assets/images/picture-one.png";
-import picTwo from "../assets/images/picture-two.png";
-import picThree from "../assets/images/picture-three.png";
-import picFour from "../assets/images/picture-four.png";
-import picFive from "../assets/images/picture-five.png";
-import picSix from "../assets/images/picture-six.png";
+import picOne from "../assets/images/avatar-one.png";
+import picTwo from "../assets/images/avatar-two.png";
+import picThree from "../assets/images/avatar-three.png";
+import picFour from "../assets/images/avatar-four.png";
+import picFive from "../assets/images/avatar-five.png";
+import picSix from "../assets/images/avatar-six.png";
 
 export const data = [
   {
-    name: "Emmanuel",
+    name: "Fatima Nakia",
+    position: "CORPORATE OFFICER AND ADVISOR, STRIPE",
     img: picOne,
   },
   {
-    name: "Emmanuel",
+    name: "Eyang Peters",
+    position: "CEO AND COFOUNDER, STRIPE",
     img: picTwo,
   },
   {
-    name: "Emmanuel",
+    name: "Chiamaka Okoye",
+    position: "HEAD OF GLOBAL SALES, STRIPE",
     img: picThree,
   },
   {
-    name: "Emmanuel",
+    name: "Jakob Wilson",
+    position: "HEAD OF PRODUCT, STRIPE",
     img: picFour,
   },
   {
-    name: "Emmanuel",
+    name: "Phillip Ramonda",
+    position: "REVENUE AND FINANCIAL MANAGEMENT, STRIPE",
     img: picFive,
   },
   {
-    name: "Emmanuel",
+    name: "Erik Kofi",
+    position: "PRESIDENT AND COFOUNDER, STRIPE",
     img: picSix,
   },
 ];

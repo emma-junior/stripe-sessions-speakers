@@ -1,0 +1,110 @@
+@import "../styles/index.scss";
+
+.speakers-section {
+    background: $col-white;
+    width: 85%;
+    margin: 50px auto;
+    padding: 15px 10px 30px;
+    border-radius: 25px;
+
+    .header {
+        display: flex;
+        margin: 30px auto;
+        width: 85%;
+        justify-content: space-between;
+
+        .writeup {
+            width: 60%;
+            h1 {
+                font-size: 50px;
+            }
+            p {
+                margin: 5px;
+                font-size: 15px;
+            }
+        }
+
+        .btns {
+            display: flex;
+            justify-content: flex-end;
+            .weather-icon {
+                margin: 15px 15px 0 5px;
+                width: 25px;
+                cursor: pointer
+            }
+            .arrow-btns {
+                @include center(30px, 25px);
+                background-image: linear-gradient(to top, #48c6ef 0%, #6f86d6 100%);
+                border: none;
+                margin: 15px 4px;
+                border-radius: 3px;
+                cursor: pointer;
+
+                img {
+                    width: 18px;
+                }
+            }
+        }
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+
+        .card {
+            margin: 0 5px;
+            background-image: url("../assets/images/Grain.svg");
+            width: 8%;
+            height: 570px;
+            transition: .3s;
+            border-radius: 20px;
+            padding-top: 80px;
+            overflow: hidden;
+
+            .speaker {
+                opacity: 0;
+                position: absolute;
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 20px;
+
+            }
+        }
+
+        .expanded {
+            width: 45%;
+            position: relative;
+
+            .speaker {
+                position: absolute;
+                top: 25px;
+                left: 25px;
+                transition: opacity 3s;
+                opacity: 1;
+
+                .position {
+                    color: #365deb;
+                    font-weight: 700;
+                    font-size: 15px;
+                }
+
+                .name {
+                    font-size: 22px;
+                    font-weight: 600;
+                }
+            }
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .not-expanded:hover {
+            width: 10%;
+        }
+    }
+}
